@@ -57,6 +57,9 @@ GitHub에 연결해 푸시마다 자동 배포하려면 [Vercel에 Git 연결](h
 
 ## Git
 
+원격 저장소: [github.com/a01067144247-netizen/interectivetest](https://github.com/a01067144247-netizen/interectivetest)
+
 ```powershell
 git status
+git push
 ```
