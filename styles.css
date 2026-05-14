@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #e8eaed;
+  color: #1a1a1a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+  padding: 0.65rem 1rem;
+  background: #fff;
+  border-bottom: 1px solid #c5c9d0;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 0.8rem;
+  color: #555;
+  white-space: nowrap;
+}
+
+.palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.swatch {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 4px;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  padding: 0;
+}
+
+.swatch:hover {
+  border-color: #333;
+}
+
+.swatch[aria-checked="true"] {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+#width {
+  width: 140px;
+}
+
+output {
+  font-variant-numeric: tabular-nums;
+  min-width: 1.5rem;
+  font-size: 0.85rem;
+}
+
+.btn {
+  font: inherit;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #b0b4bd;
+  background: #f4f5f7;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #e8eaef;
+}
+
+.btn.active {
+  background: #dbeafe;
+  border-color: #2563eb;
+  color: #1e3a8a;
+}
+
+.btn.primary {
+  background: #2563eb;
+  border-color: #1d4ed8;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: #1d4ed8;
+}
+
+.btn.danger {
+  border-color: #dc2626;
+  color: #991b1b;
+  background: #fef2f2;
+}
+
+.btn.danger:hover {
+  background: #fee2e2;
+}
+
+.stage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+  overflow: auto;
+}
+
+#board {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background: #fff;
+  border: 1px solid #b0b4bd;
+  border-radius: 4px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  touch-action: none;
+  cursor: crosshair;
+}
+
+.hint {
+  margin: 0;
+  padding: 0.5rem 1rem 1rem;
+  font-size: 0.85rem;
+  color: #555;
+  text-align: center;
+}
