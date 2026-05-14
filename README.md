@@ -31,6 +31,21 @@ cd c:\Users\a0106\Desktop\interectivetest
 npx --yes serve .
 ```
 
+## Vercel (프로덕션)
+
+배포된 주소:
+
+- **https://interectivetest.vercel.app**
+
+다시 배포하려면(프로젝트 루트에서):
+
+```powershell
+cd c:\Users\a0106\Desktop\interectivetest
+npx vercel@latest deploy --prod --yes
+```
+
+GitHub에 연결해 푸시마다 자동 배포하려면 [Vercel에 Git 연결](https://vercel.com/docs/deployments/git)을 사용하면 됩니다.
+
 ## 파일
 
 | 파일        | 설명        |
@@ -38,6 +53,7 @@ npx --yes serve .
 | `index.html` | UI 뼈대   |
 | `styles.css` | 레이아웃·툴바 |
 | `draw.js`    | 캔버스 그리기 로직 |
+| `vercel.json` | Vercel 설정(선택 헤더) |
 
 ## Git
 

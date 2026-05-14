@@ -23,6 +23,9 @@ Desktop.ini
 .vscode/*
 !.vscode/extensions.json
 
+# Vercel
+.vercel
+
 # Logs
 *.log
 npm-debug.log*
