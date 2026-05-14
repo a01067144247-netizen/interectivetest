@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build / cache
+dist/
+build/
+.next/
+out/
+.cache/
+*.tsbuildinfo
+
+# Environment
+.env
+.env.*.local
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# IDE / editor
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Logs
+*.log
+npm-debug.log*
